@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Home</title>
+</head>
+<body class="contactUs-container">
+    <header id="home-header">
+        <!-- <h1>Welcome to Our Page</h1> -->
+    </header>
+    <nav id="home-nav">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/signup.html">Sign Up</a></li>
+            <li><a href="/pages/portfolio.html">Portfolio</a></li>
+            <li><a href="/pages/contactUs.html">Contact</a></li>
+            <li><a href="">Help</a></li>
+        </ul>
+    </nav>
+    <h1>Contact Us</h1>
+    
+    <main class="contactUs-main">
+       
+       
+       <div class="contactUs-div">
+        <img class="contactUs-img" src="/img/technical_support_80px.png" alt="byPhone">
+        <h3>By Phone</h3>
+        <p>Monday to Friday, 9AM to 4PM EST</p>
+        <p>North America Toll-Free: <br>
+        1-877-931-7498</p>
+
+        <p>International: <br>
+        1-604-638-9076</p>
+       </div>
+       <div class="contactUs-div">
+        <img class="contactUs-img" src="/img/opened_folder_80px.png" alt="byPhone">
+        <h3>Join Our Team</h3>
+        <p>Click on this to fill out the signup form you are directed to.</p>
+        <button onclick="window.location.href='/pages/signup.html'" type="button" formaction="/pages/signup.html" id="contactUs-button">Join us</button>
+
+       </div>
+       <div class="contactUs-div">
+        <img class="contactUs-img" src="/img/communication_80px.png"byPhone">
+        <h3>Talk to Us</h3>
+        <p>Chat with a member of our in-house team</p>
+        <button class="open-button" onclick="openForm()"  type="button" id="contactUs-button">Chat</button>
+
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Chat with Us</h1>
+
+              <label class="form-label" for="name"><b>Full Name</b></label>
+              <input type="text" placeholder="Enter Full Name" name="fullname" required>
+          
+              <label class="form-label" for="email"><b>Email</b></label>
+              <input type="email" placeholder="Enter Email" name="email" required>
+          
+              <!-- <label for="message"><b>Your Message</b></label>
+              <input id="message" type="text"  placeholder="Enter Your Message" name="message" > -->
+
+              <label class="form-label" for="message"><b>Message</b></label>
+              <textarea id="message" placeholder="Enter your message" name="message" rows="5" cols="5" required></textarea>
+          
+              <button type="submit" class="btn">Send</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+       
+    </main>
+    <footer class="home-footer">
+        <div class="home-foot">
+            <h3>Quick links</h3>
+            <nav id="home-downlinks">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/signup.html">Sign Up</a></li>
+                    <li><a href="/pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="/pages/contactUs.html">Contact</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+            
+        <div class="home-foot1">
+            <h3>Contact</h3>
+            <address>
+                15 lorenzo cres, 
+                <br>Toronto,CA
+                <br>L6G 7Y6
+            </address>
+            <a href="mailto:apeksha@gmail.com">mapeksha@gmail.com</a><br>
+            <a href="tel:+13747889934">+13747889934</a>
+        </div>
+
+        
+        <div><hr></div>
+
+        <p>MApeksha  &copy; copyright information</p>
+
+
+        
+    </footer>
+
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+    
+</body>
+</html>
